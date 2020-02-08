@@ -1,15 +1,17 @@
 import React from "react";
 
-function PlayerInput() {
+const PlayerInput = props => {
   return (
-    <form className="playerInput">
-      <input type="text" placeholder="Player #1 Name" name="nameOne" />
+    <form onSubmit={props.getPlayerStats} className="playerInput">
+      <input type="text" placeholder="Player #1 Name" name="playerOneName"/>
+      <input type="number" placeholder="Season Year" name="playerOneSeason"/>
       <br></br>
-      <input type="text" placeholder="Player #2 Name" name="nameTwo" />
+      <input type="text" placeholder="Player #2 Name" name="playerTwoName" />
+      <input type="number" placeholder="Season Year" name="playerTwoSeason"/>
       <br></br>
       <input type="submit" value="Submit" />
     </form>
   );
-}
+};
 
 export default PlayerInput;
