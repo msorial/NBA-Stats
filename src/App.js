@@ -3,6 +3,7 @@ import "./App.css";
 
 import PlayerInput from "./components/PlayerInput";
 import StatsTable from "./components/StatsTable";
+import WelcomeMessage from "./components/WelcomeMessage";
 
 class App extends React.Component {
   state = {
@@ -72,6 +73,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <WelcomeMessage />
         <PlayerInput getPlayerStats={this.getPlayerStats} />
         <StatsTable
           playerOnePts={this.state.playerOnePts}
