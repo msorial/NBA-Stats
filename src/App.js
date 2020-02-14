@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
 
+import WelcomeMessage from "./components/WelcomeMessage";
 import PlayerInput from "./components/PlayerInput";
 import StatsTable from "./components/StatsTable";
-import WelcomeMessage from "./components/WelcomeMessage";
 
 class App extends React.Component {
   state = {

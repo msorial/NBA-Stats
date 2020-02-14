@@ -11,11 +11,7 @@ body {
   text-align: center;
   font-size: 9vw;
   margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-
-.headerMessage-first {
-  color: #bdbdbd;
+  margin-bottom: 1vh;
 }
 
 .headerMessage-gradiant {
@@ -23,6 +19,10 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.headerMessage-last {
+  color: #cccccc;
 }
 
 .siteDescription {
@@ -34,6 +34,65 @@ body {
 }
 
 .playerInput {
-  margin-top: 20vh;
-  margin-bottom: 30vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0);
+  font-family: Inconsolata;
+  font-size: 18px;
+  height: 6vh;
+  width: 20vw;
+  margin: 0.5vw;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  padding: 5px;
+}
+
+.playerOneInputs {
+  border: 1px solid #ff8a00;
+}
+
+.playerTwoInputs {
+  border: 1px solid #da1b60;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  width: 15vw;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.submitButton {
+  border: 1px solid white;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.082);
+}
+
+.statOutput {
+  color: white;
+  text-align: center;
 }

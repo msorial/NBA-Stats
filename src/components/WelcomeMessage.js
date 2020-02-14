@@ -5,8 +5,8 @@ class WelcomeMessage extends React.Component {
     return (
       <div>
         <h1 className="headerMessage">
-          <span className="headerMessage-first">Compare</span> your{" "}
-          <span className="headerMessage-gradiant">Favorite</span> Players
+          Compare your <span className="headerMessage-gradiant"> Favorite</span>{" "}
+          <span className="headerMessage-last">Players</span>
         </h1>
         <p className="siteDescription">NBA Player Comparison Tool</p>
       </div>
