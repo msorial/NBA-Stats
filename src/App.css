@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:700i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli:300i&display=swap");
 
 body {
   background-color: #131418;
@@ -10,7 +11,7 @@ body {
   color: white;
   text-align: center;
   font-size: 9vw;
-  margin-top: 5vh;
+  margin-top: 0vh;
   margin-bottom: 1vh;
 }
 
@@ -29,13 +30,14 @@ body {
   text-align: center;
   color: white;
   font-family: Inconsolata;
-  font-size: 1.5vw;
-  margin-top: 0vh;
+  font-size: 1.7vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
 .playerInput {
-  margin-top: 15vh;
-  margin-bottom: 15vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 input {
@@ -49,6 +51,7 @@ input {
   outline: none;
   color: white;
   padding: 5px;
+  font-size: 3vh;
 }
 
 .playerOneInputs {
@@ -86,6 +89,7 @@ select:-webkit-autofill:focus {
 
 .submitButton {
   border: 1px solid white;
+  padding: 1vh;
 }
 
 input[type="submit"]:hover {
@@ -95,4 +99,40 @@ input[type="submit"]:hover {
 .statOutput {
   color: white;
   text-align: center;
+  font-family: Poppins;
+}
+
+.compareTable {
+  text-align: center;
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 50vw;
+  margin-bottom: 20vh;
+  font-family: Muli;
+}
+
+.compareTable td,
+.compareTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.compareTable tr:hover {
+  background-color: rgba(255, 255, 255, 0.082);
+}
+
+.compareTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+  text-align: center;
+}
+
+.compareTable th:nth-child(2) {
+  background-color: #ff8a00;
+}
+
+.compareTable th:nth-child(3) {
+  background-color: #da1b60;
 }

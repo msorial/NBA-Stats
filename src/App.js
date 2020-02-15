@@ -7,9 +7,13 @@ import StatsTable from "./components/StatsTable";
 
 class App extends React.Component {
   state = {
+    playerOneFirstName: undefined,
+    playerOneLastName: undefined,
     playerOnePts: undefined,
     PlayerOneAst: undefined,
     PlayerOneReb: undefined,
+    playerTwoFirstName: undefined,
+    playerTwoLastName: undefined,
     playerTwoPts: undefined,
     PlayerTwoAst: undefined,
     PlayerTwoReb: undefined,
@@ -45,13 +49,17 @@ class App extends React.Component {
         `https://www.balldontlie.io/api/v1/season_averages?player_ids[]=${playerTwoID}&season=${playerTwoSeason}`
       );
       const playerTwoAverageData = await playerTwoAverageAPI.json();
-      // console.log(playerTwoProfileData);
-      // console.log(playerTwoAverageData);
+      console.log(playerTwoProfileData);
+      console.log(playerTwoAverageData);
 
       this.setState({
+        playerOneFirstName: playerOneProfileData.data[0].first_name,
+        playerOneLastName: playerOneProfileData.data[0].last_name,
         playerOnePts: playerOneAverageData.data[0].pts,
         playerOneAst: playerOneAverageData.data[0].ast,
         playerOneReb: playerOneAverageData.data[0].reb,
+        playerTwoFirstName: playerTwoProfileData.data[0].first_name,
+        playerTwoLastName: playerTwoProfileData.data[0].last_name,
         playerTwoPts: playerTwoAverageData.data[0].pts,
         playerTwoAst: playerTwoAverageData.data[0].ast,
         playerTwoReb: playerTwoAverageData.data[0].reb,
@@ -59,9 +67,13 @@ class App extends React.Component {
       });
     } else {
       this.setState({
+        playerOneFirstName: undefined,
+        playerOneLastName: undefined,
         playerOnePts: undefined,
         playerOneAst: undefined,
         playerOneReb: undefined,
+        playerTwoFirstName: undefined,
+        playerTwoLastName: undefined,
         playerTwoPts: undefined,
         playerTwoAst: undefined,
         playerTwoReb: undefined,
@@ -72,13 +84,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="background">
         <WelcomeMessage />
         <PlayerInput getPlayerStats={this.getPlayerStats} />
         <StatsTable
+          playerOneFirstName={this.state.playerOneFirstName}
+          playerOneLastName={this.state.playerOneLastName}
           playerOnePts={this.state.playerOnePts}
           playerOneAst={this.state.playerOneAst}
           playerOneReb={this.state.playerOneReb}
+          playerTwoFirstName={this.state.playerTwoFirstName}
+          playerTwoLastName={this.state.playerTwoLastName}
           playerTwoPts={this.state.playerTwoPts}
           playerTwoAst={this.state.playerTwoAst}
           playerTwoReb={this.state.playerTwoReb}
