@@ -30,7 +30,7 @@ body {
   text-align: center;
   color: white;
   font-family: Inconsolata;
-  font-size: 1.7vw;
+  font-size: 2vw;
   margin-top: 1vh;
   margin-bottom: 1vh;
 }
@@ -55,11 +55,11 @@ input {
 }
 
 .playerOneInputs {
-  border: 1px solid #ff8a00;
+  border: 2px solid #ff8a00;
 }
 
 .playerTwoInputs {
-  border: 1px solid #da1b60;
+  border: 2px solid #da1b60;
 }
 
 input[type="number"] {
@@ -107,7 +107,7 @@ input[type="submit"]:hover {
   margin: 0 auto;
   border-collapse: collapse;
   width: 50vw;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   font-family: Muli;
 }
 
@@ -118,7 +118,7 @@ input[type="submit"]:hover {
 }
 
 .compareTable tr:hover {
-  background-color: rgba(255, 255, 255, 0.082);
+  background-color: rgba(245, 222, 179, 0.3);
 }
 
 .compareTable th {
@@ -135,4 +135,8 @@ input[type="submit"]:hover {
 
 .compareTable th:nth-child(3) {
   background-color: #da1b60;
+}
+
+.compareTable tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.082);
 }

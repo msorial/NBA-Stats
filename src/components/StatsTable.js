@@ -36,33 +36,87 @@ class StatsTable extends React.Component {
               {this.props.playerOnePts && <td>{this.props.playerOnePts}</td>}
               {this.props.playerTwoPts && <td>{this.props.playerTwoPts}</td>}
             </tr>
-            {/* <tr>
-              <th>Assists</th>
+            <tr>
+              {this.props.playerOneAst && this.props.playerTwoAst && (
+                <th>
+                  <p>Assists</p>
+                </th>
+              )}
+              {this.props.playerOneAst && <td>{this.props.playerOneAst}</td>}
+              {this.props.playerTwoAst && <td>{this.props.playerTwoAst}</td>}
             </tr>
             <tr>
-              <th>Rebounds</th>
+              {this.props.playerOneReb && this.props.playerTwoReb && (
+                <th>
+                  <p>Rebounds</p>
+                </th>
+              )}
+              {this.props.playerOneReb && <td>{this.props.playerOneReb}</td>}
+              {this.props.playerTwoReb && <td>{this.props.playerTwoReb}</td>}
             </tr>
             <tr>
-              <th>Steals</th>
+              {this.props.playerOneStl && this.props.playerTwoStl && (
+                <th>
+                  <p>Steals</p>
+                </th>
+              )}
+              {this.props.playerOneStl && <td>{this.props.playerOneStl}</td>}
+              {this.props.playerTwoStl && <td>{this.props.playerTwoStl}</td>}
             </tr>
             <tr>
-              <th>Blocks</th>
+              {this.props.playerOneBlk && this.props.playerTwoBlk && (
+                <th>
+                  <p>Blocks</p>
+                </th>
+              )}
+              {this.props.playerOneBlk && <td>{this.props.playerOneBlk}</td>}
+              {this.props.playerTwoBlk && <td>{this.props.playerTwoBlk}</td>}
             </tr>
             <tr>
-              <th>FG%</th>
+              {this.props.playerOneFGP && this.props.playerTwoFGP && (
+                <th>
+                  <p>FG%</p>
+                </th>
+              )}
+              {this.props.playerOneFGP && <td>{(this.props.playerOneFGP * 100).toFixed(1)}</td>}
+              {this.props.playerTwoFGP && <td>{(this.props.playerTwoFGP * 100).toFixed(1)}</td>}
             </tr>
             <tr>
-              <th>3P%</th>
+              {this.props.playerOneFG3P && this.props.playerTwoFG3P && (
+                <th>
+                  <p>3P%</p>
+                </th>
+              )}
+              {this.props.playerOneFG3P && <td>{(this.props.playerOneFG3P * 100).toFixed(1)}</td>}
+              {this.props.playerTwoFG3P && <td>{(this.props.playerTwoFG3P * 100).toFixed(1)}</td>}
             </tr>
             <tr>
-              <th>FT%</th>
+              {this.props.playerOneFTP && this.props.playerTwoFTP && (
+                <th>
+                  <p>FT%</p>
+                </th>
+              )}
+              {this.props.playerOneFTP && <td>{(this.props.playerOneFTP * 100).toFixed(1)}</td>}
+              {this.props.playerTwoFTP && <td>{(this.props.playerTwoFTP * 100).toFixed(1)}</td>}
             </tr>
             <tr>
-              <th>Turnovers</th>
+              {this.props.playerOneTO && this.props.playerTwoTO && (
+                <th>
+                  <p>Turnovers</p>
+                </th>
+              )}
+              {this.props.playerOneTO && <td>{this.props.playerOneTO}</td>}
+              {this.props.playerTwoTO && <td>{this.props.playerTwoTO}</td>}
             </tr>
             <tr>
-              <th>Minutes</th>
-            </tr> */}
+              {this.props.playerOneMin && this.props.playerTwoMin && (
+                <th>
+                  <p>Minutes</p>
+                </th>
+              )}
+              {this.props.playerOneMin && <td>{this.props.playerOneMin}</td>}
+              {this.props.playerTwoMin && <td>{this.props.playerTwoMin}</td>}
+            </tr>
           </tbody>
         </table>
       </div>
