@@ -33,8 +33,8 @@ class StatsTable extends React.Component {
                   <p>Points</p>
                 </th>
               )}
-              {this.props.playerOnePts && <td>{this.props.playerOnePts}</td>}
-              {this.props.playerTwoPts && <td>{this.props.playerTwoPts}</td>}
+              {this.props.playerOnePts && <td>{(this.props.playerOnePts).toFixed(1)}</td>}
+              {this.props.playerTwoPts && <td>{(this.props.playerTwoPts).toFixed(1)}</td>}
             </tr>
             <tr>
               {this.props.playerOneAst && this.props.playerTwoAst && (
@@ -42,8 +42,8 @@ class StatsTable extends React.Component {
                   <p>Assists</p>
                 </th>
               )}
-              {this.props.playerOneAst && <td>{this.props.playerOneAst}</td>}
-              {this.props.playerTwoAst && <td>{this.props.playerTwoAst}</td>}
+              {this.props.playerOneAst && <td>{(this.props.playerOneAst).toFixed(1)}</td>}
+              {this.props.playerTwoAst && <td>{(this.props.playerTwoAst).toFixed(1)}</td>}
             </tr>
             <tr>
               {this.props.playerOneReb && this.props.playerTwoReb && (
@@ -51,8 +51,8 @@ class StatsTable extends React.Component {
                   <p>Rebounds</p>
                 </th>
               )}
-              {this.props.playerOneReb && <td>{this.props.playerOneReb}</td>}
-              {this.props.playerTwoReb && <td>{this.props.playerTwoReb}</td>}
+              {this.props.playerOneReb && <td>{(this.props.playerOneReb).toFixed(1)}</td>}
+              {this.props.playerTwoReb && <td>{(this.props.playerTwoReb).toFixed(1)}</td>}
             </tr>
             <tr>
               {this.props.playerOneStl && this.props.playerTwoStl && (
@@ -60,8 +60,8 @@ class StatsTable extends React.Component {
                   <p>Steals</p>
                 </th>
               )}
-              {this.props.playerOneStl && <td>{this.props.playerOneStl}</td>}
-              {this.props.playerTwoStl && <td>{this.props.playerTwoStl}</td>}
+              {this.props.playerOneStl && <td>{(this.props.playerOneStl).toFixed(1)}</td>}
+              {this.props.playerTwoStl && <td>{(this.props.playerTwoStl).toFixed(1)}</td>}
             </tr>
             <tr>
               {this.props.playerOneBlk && this.props.playerTwoBlk && (
@@ -69,8 +69,8 @@ class StatsTable extends React.Component {
                   <p>Blocks</p>
                 </th>
               )}
-              {this.props.playerOneBlk && <td>{this.props.playerOneBlk}</td>}
-              {this.props.playerTwoBlk && <td>{this.props.playerTwoBlk}</td>}
+              {this.props.playerOneBlk && <td>{(this.props.playerOneBlk).toFixed(1)}</td>}
+              {this.props.playerTwoBlk && <td>{(this.props.playerTwoBlk).toFixed(1)}</td>}
             </tr>
             <tr>
               {this.props.playerOneFGP && this.props.playerTwoFGP && (
@@ -105,8 +105,8 @@ class StatsTable extends React.Component {
                   <p>Turnovers</p>
                 </th>
               )}
-              {this.props.playerOneTO && <td>{this.props.playerOneTO}</td>}
-              {this.props.playerTwoTO && <td>{this.props.playerTwoTO}</td>}
+              {this.props.playerOneTO && <td>{(this.props.playerOneTO).toFixed(1)}</td>}
+              {this.props.playerTwoTO && <td>{(this.props.playerTwoTO).toFixed(1)}</td>}
             </tr>
             <tr>
               {this.props.playerOneMin && this.props.playerTwoMin && (
