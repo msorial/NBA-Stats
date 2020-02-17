@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import WelcomeMessage from "./components/WelcomeMessage";
+import Header from "./components/Header";
 import PlayerInput from "./components/PlayerInput";
 import StatsTable from "./components/StatsTable";
 
@@ -128,8 +128,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="background">
-        <WelcomeMessage />
+      <div>
+        <Header />
         <PlayerInput getPlayerStats={this.getPlayerStats} />
         <StatsTable
           playerOneFirstName={this.state.playerOneFirstName}
