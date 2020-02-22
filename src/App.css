@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:700i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Muli:300i&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Nunito:300i&display=swap');
 
 body {
   background-color: #1c2833;
@@ -31,8 +32,8 @@ body {
   font-family: Poppins;
   color: #58d68d;
   text-align: center;
-  margin-top: -1vh;
-  margin-bottom: 1vh;
+  margin-top: -5px;
+  margin-bottom: 5px;
 }
 
 .siteDescription {
@@ -40,14 +41,14 @@ body {
   color: #ffffff;
   font-family: Inconsolata;
   font-size: 2vw;
-  margin-top: 10vh;
+  margin-top: 40px;
   margin-bottom: 0vh;
   padding: 5px;
 }
 
 .playerInput {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 input {
@@ -100,17 +101,24 @@ select:-webkit-autofill:focus {
 .submitButton {
   border: 1px solid #ffffff;
   padding: 1vh;
+  font-family: Nunito;
 }
 
 input[type="submit"]:hover {
   background-color: #58d68d;
-  color: #1c2833;
+  color: #000000;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
 }
 
 .statOutput {
   color: #ffffff;
   text-align: center;
-  font-family: Poppins;
+  font-family: Inconsolata;
+  font-size: 2vw;
+  color: #FF5252;
 }
 
 .compareTable {
